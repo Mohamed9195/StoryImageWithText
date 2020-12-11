@@ -10,6 +10,7 @@
 		7D5EA43F25837A82009FD1B6 /* StoryImageWithText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5EA43525837A81009FD1B6 /* StoryImageWithText.framework */; };
 		7D5EA44425837A82009FD1B6 /* StoryImageWithTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EA44325837A82009FD1B6 /* StoryImageWithTextTests.swift */; };
 		7D5EA44625837A82009FD1B6 /* StoryImageWithText.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5EA43825837A81009FD1B6 /* StoryImageWithText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D5EA45225837AA0009FD1B6 /* StoryImageWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5EA45125837AA0009FD1B6 /* StoryImageWithText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		7D5EA43E25837A82009FD1B6 /* StoryImageWithTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryImageWithTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5EA44325837A82009FD1B6 /* StoryImageWithTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryImageWithTextTests.swift; sourceTree = "<group>"; };
 		7D5EA44525837A82009FD1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D5EA45125837AA0009FD1B6 /* StoryImageWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryImageWithText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				7D5EA43825837A81009FD1B6 /* StoryImageWithText.h */,
 				7D5EA43925837A81009FD1B6 /* Info.plist */,
+				7D5EA45125837AA0009FD1B6 /* StoryImageWithText.swift */,
 			);
 			path = StoryImageWithText;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					7D5EA43425837A81009FD1B6 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					7D5EA43D25837A82009FD1B6 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5EA45225837AA0009FD1B6 /* StoryImageWithText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		7D5EA44A25837A83009FD1B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BN2D9VKA46;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MH.StoryImageWithText;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		7D5EA44B25837A83009FD1B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BN2D9VKA46;
@@ -389,6 +397,7 @@
 		7D5EA44D25837A83009FD1B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN2D9VKA46;
 				INFOPLIST_FILE = StoryImageWithTextTests/Info.plist;
@@ -407,6 +416,7 @@
 		7D5EA44E25837A83009FD1B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN2D9VKA46;
 				INFOPLIST_FILE = StoryImageWithTextTests/Info.plist;
